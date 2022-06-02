@@ -1,0 +1,45 @@
+[
+	{
+		"customerId": 1,
+		"customerName": "Customer1",
+		"transactions": [
+			{
+				"transactionId": 111,
+				"transactionDate": "2022-06-01T22:56:31.064Z",
+				"expense": 120
+			},
+			{
+				"transactionId": 111,
+				"transactionDate": "2022-06-01T22:56:31.064Z",
+				"expense": 100
+			},
+			{
+				"transactionId": 111,
+				"transactionDate": "2022-07-01T22:56:31.064Z",
+				"expense": 10
+			}
+		]
+	},
+	{
+		"customerId": 2,
+		"customerName": "Customer2",
+		"transactions": [
+			{
+				"transactionId": 122,
+				"transactionDate": "2022-06-01T22:56:31.064Z",
+				"expense": 120
+			}
+		]
+	},
+	{
+		"customerId": 3,
+		"customerName": "Customer3",
+		"transactions": [
+			{
+				"transactionId": 131,
+				"transactionDate": "2022-06-01T22:56:31.064Z",
+				"expense": 200
+			}
+		]
+	}
+]
