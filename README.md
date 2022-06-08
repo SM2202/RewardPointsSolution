@@ -58,6 +58,6 @@ RewardPointsTests contains Unit Test.
 | 2           | 90      |
 | 3           | 250     |
 
-Swagger API:
+**Screenshot From Swagger UI:**
 
-![GetRewardsForAllCustomers]("./TestImages/GetRewardsForAllCustomers.png")
+![GetRewardsForAllCustomers](https://github.com/SM2202/RewardPointsSolution/blob/main/TestImages/GetRewardsForAllCustomers.png)
