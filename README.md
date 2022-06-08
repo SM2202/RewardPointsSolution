@@ -2,8 +2,10 @@
 ## Technical Stack Used: C# .NET MVC
 ## Tools Required: Visual Studio Code Or Visual Studio
 ### How To Run the Project 
+**Prerequisite: .NET Core 3.1 RunTime (LTS)**
 Git clone the repository
 #### In Visual Studio Code
+
 1. Open the RewardPointsAPI folder.
 1. Build the project from Terminal window with: dotnet build
 1. Run the Project from Terminal window with: dotnet run
@@ -27,3 +29,35 @@ RewardPointsTests contains Unit Test.
 2. RewardPointController contains two method:
    1. GetRewardsForAllCustomer(): Calculate the monthly and total reward points for customer details present in DataSet.json.
    2. CalculateRewardsForCustomer(Customer customer): Calculate monthly and total reward points for customer details passed as input parameter.
+
+### DataSet
+#### Input:
+   
+| CustomerID  | TransactinDate | Expense |
+| ----------- | -----------    | ------- |
+| 1           | 2022-06-01     | 120     |
+| 1           | 2022-06-01     | 100     |
+| 1           | 2022-07-01     | 10      |
+| 2           | 2022-06-01     | 120     |
+| 3           | 2022-06-01     | 200     |
+
+#### Output:
+**Monthly Rewards:**
+
+| CustomerID  | Month | Rewards |
+| ----------- | ------| ------- |
+| 1           | 06    | 290     |
+| 1           | 07    | 0       |
+| 2           | 06    | 90      |
+| 3           | 06    | 250     |
+
+**Total Rewards:**
+| CustomerID  | Rewards |
+| ----------- | ------- | 
+| 1           | 290     |
+| 2           | 90      |
+| 3           | 250     |
+
+Swagger API:
+
+![GetRewardsForAllCustomers]("./TestImages/GetRewardsForAllCustomers.png")
